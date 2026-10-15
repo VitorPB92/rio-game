@@ -11,14 +11,14 @@
 <link rel="manifest" href="/rio-game/manifest.webmanifest" />
 <link rel="apple-touch-icon" href="/rio-game/icons/icon-192.png" />
 <title>Rio 3D — protótipo</title>
-  <script type="module" crossorigin src="/rio-game/assets/index-8zfkzcEu.js"></script>
+  <script type="module" crossorigin src="/rio-game/assets/index-DslSnZjC.js"></script>
   <link rel="modulepreload" crossorigin href="/rio-game/assets/three-phexG2ew.js">
-  <link rel="stylesheet" crossorigin href="/rio-game/assets/index-BGOY0r4U.css">
+  <link rel="stylesheet" crossorigin href="/rio-game/assets/index-B3R0ukkP.css">
 </head>
 <body>
 <canvas id="c"></canvas>
 <div id="hud"></div><pre id="fps"></pre><div id="msg">Carregando o Rio…</div>
-<div id="help">WASD mover · Shift correr · Espaço pular/freio de mão · E entrar/sair · Mouse câmera · T acelerar tempo · F FPS · R desvirar carro · 1–9 marcos</div>
+<div id="help">WASD mover · Shift correr · Espaço pular/freio de mão · F/E entrar·roubar·sair · Mouse câmera · T acelerar tempo · ` FPS · R desvirar carro · 1–9 marcos</div>
 <button id="pausebtn" class="hudbtn" aria-label="Pausar">❚❚</button>
 <div id="pause" class="overlay menu" hidden>
   <div class="panel"><h2>Pausado</h2>
@@ -27,6 +27,7 @@
   </div>
 </div>
 <div id="rotate" class="overlay" hidden><div class="rot-ico">📱↻</div><p>Gire o celular para a horizontal</p><small>O jogo continua quando a tela estiver deitada.</small></div>
+<div id="lockpick" hidden><i></i><b></b><span>🪛 Toque no tempo certo</span></div><div id="viral" hidden>📱 0</div><div id="jamicon" hidden title="Escondida no engarrafamento">🚗🚗</div>
 <div id="npcsub" hidden></div>
 <div id="ctxlost" class="overlay" hidden><p>Restaurando os gráficos…</p></div>
 <div id="touch">
