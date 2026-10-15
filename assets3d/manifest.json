@@ -1,0 +1,840 @@
+{
+ "units": "meters",
+ "up": "+Y",
+ "forward": "-Z",
+ "pivot": "base",
+ "textures": {
+  "mode": "external_shared",
+  "dir": "assets/3d/textures/shared",
+  "format": "KTX2 (ETC1S cor/AO/ORM, UASTC normal)",
+  "naming": "<nome>_<sha1 da fonte+slot>.ktx2: mesma textura-fonte usa o mesmo arquivo (deduplicada entre assets)",
+  "total_mb": 16.94,
+  "files": 59,
+  "loading": "Cada .gltf referencia textures/shared/... por URI relativa à pasta assets/3d; o .bin usa EXT_meshopt_compression. Registrar KTX2Loader + MeshoptDecoder no GLTFLoader e reutilizar um LoadingManager/Cache para não baixar a mesma URI duas vezes.",
+  "sources": "Fontes PNG/JPG autocontidas em _build/<key>_src.glb (para editar/reprocessar)."
+ },
+ "assets": [
+  {
+   "key": "centro_sobrado_colonial",
+   "file": "assets/3d/centro_sobrado_colonial.gltf",
+   "bin": "assets/3d/centro_sobrado_colonial.bin",
+   "type": "centro_modulo",
+   "scale": 1.0,
+   "lods": [
+    "centro_sobrado_colonial_lod0",
+    "centro_sobrado_colonial_lod1",
+    "centro_sobrado_colonial_lod2"
+   ],
+   "collision": "centro_sobrado_colonial_col",
+   "triangles": {
+    "lod0": 692,
+    "lod1": 296,
+    "lod2": 116,
+    "col": 12
+   },
+   "draw_calls_lod0": 7,
+   "bin_mb": 0.021,
+   "textures_mb_if_alone": 5.3,
+   "textures": [
+    "textures/shared/centro_sobrado_colonial_ao_8e92d6bfd7.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/roof_tiles_14_diff_19e5392570.ktx2",
+    "textures/shared/roof_tiles_14_nor_gl_d90b1a1a54.ktx2",
+    "textures/shared/roof_tiles_14_rough_a2fdd22a01.ktx2",
+    "textures/shared/wood_planks_grey_diff_8eaa5a41bf.ktx2",
+    "textures/shared/wood_planks_grey_nor_gl_fa310634a3.ktx2",
+    "textures/shared/wood_planks_grey_rough_6ff24ef076.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "centro_sobrado_ecletico_2p",
+   "file": "assets/3d/centro_sobrado_ecletico_2p.gltf",
+   "bin": "assets/3d/centro_sobrado_ecletico_2p.bin",
+   "type": "centro_modulo",
+   "scale": 1.0,
+   "lods": [
+    "centro_sobrado_ecletico_2p_lod0",
+    "centro_sobrado_ecletico_2p_lod1",
+    "centro_sobrado_ecletico_2p_lod2"
+   ],
+   "collision": "centro_sobrado_ecletico_2p_col",
+   "triangles": {
+    "lod0": 968,
+    "lod1": 536,
+    "lod2": 140,
+    "col": 12
+   },
+   "draw_calls_lod0": 7,
+   "bin_mb": 0.037,
+   "textures_mb_if_alone": 5.32,
+   "textures": [
+    "textures/shared/centro_sobrado_ecletico_2p_ao_77cc80be4e.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/roof_tiles_14_diff_19e5392570.ktx2",
+    "textures/shared/roof_tiles_14_nor_gl_d90b1a1a54.ktx2",
+    "textures/shared/roof_tiles_14_rough_a2fdd22a01.ktx2",
+    "textures/shared/wood_planks_grey_diff_8eaa5a41bf.ktx2",
+    "textures/shared/wood_planks_grey_nor_gl_fa310634a3.ktx2",
+    "textures/shared/wood_planks_grey_rough_6ff24ef076.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "centro_sobrado_ecletico_3p",
+   "file": "assets/3d/centro_sobrado_ecletico_3p.gltf",
+   "bin": "assets/3d/centro_sobrado_ecletico_3p.bin",
+   "type": "centro_modulo",
+   "scale": 1.0,
+   "lods": [
+    "centro_sobrado_ecletico_3p_lod0",
+    "centro_sobrado_ecletico_3p_lod1",
+    "centro_sobrado_ecletico_3p_lod2"
+   ],
+   "collision": "centro_sobrado_ecletico_3p_col",
+   "triangles": {
+    "lod0": 1628,
+    "lod1": 692,
+    "lod2": 176,
+    "col": 12
+   },
+   "draw_calls_lod0": 7,
+   "bin_mb": 0.057,
+   "textures_mb_if_alone": 5.32,
+   "textures": [
+    "textures/shared/centro_sobrado_ecletico_3p_ao_7775c153a2.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/roof_tiles_14_diff_19e5392570.ktx2",
+    "textures/shared/roof_tiles_14_nor_gl_d90b1a1a54.ktx2",
+    "textures/shared/roof_tiles_14_rough_a2fdd22a01.ktx2",
+    "textures/shared/wood_planks_grey_diff_8eaa5a41bf.ktx2",
+    "textures/shared/wood_planks_grey_nor_gl_fa310634a3.ktx2",
+    "textures/shared/wood_planks_grey_rough_6ff24ef076.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "centro_poste",
+   "file": "assets/3d/centro_poste.gltf",
+   "bin": "assets/3d/centro_poste.bin",
+   "type": "centro_modulo",
+   "scale": 1.0,
+   "lods": [
+    "centro_poste_lod0",
+    "centro_poste_lod1",
+    "centro_poste_lod2"
+   ],
+   "collision": "centro_poste_col",
+   "triangles": {
+    "lod0": 116,
+    "lod1": 84,
+    "lod2": 60,
+    "col": 12
+   },
+   "draw_calls_lod0": 2,
+   "bin_mb": 0.004,
+   "textures_mb_if_alone": 0.0,
+   "textures": [],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null
+  },
+  {
+   "key": "centro_calcada",
+   "file": "assets/3d/centro_calcada.gltf",
+   "bin": "assets/3d/centro_calcada.bin",
+   "type": "centro_modulo",
+   "scale": 1.0,
+   "lods": [
+    "centro_calcada_lod0",
+    "centro_calcada_lod1",
+    "centro_calcada_lod2"
+   ],
+   "collision": "centro_calcada_col",
+   "triangles": {
+    "lod0": 36,
+    "lod1": 36,
+    "lod2": 36,
+    "col": 12
+   },
+   "draw_calls_lod0": 3,
+   "bin_mb": 0.002,
+   "textures_mb_if_alone": 3.04,
+   "textures": [
+    "textures/shared/asphalt_02_diff_35b711aa14.ktx2",
+    "textures/shared/asphalt_02_nor_gl_4722dada91.ktx2",
+    "textures/shared/asphalt_02_rough_21b18683eb.ktx2",
+    "textures/shared/calcada_centro_base_d62e874979.ktx2",
+    "textures/shared/calcada_centro_nrm_2e008b69af.ktx2",
+    "textures/shared/centro_calcada_ao_90f18df653.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "sao_januario",
+   "file": "assets/3d/sao_januario.gltf",
+   "bin": "assets/3d/sao_januario.bin",
+   "type": "landmark",
+   "scale": 1.0,
+   "lods": [
+    "sao_januario_lod0",
+    "sao_januario_lod1",
+    "sao_januario_lod2"
+   ],
+   "collision": "sao_januario_col",
+   "triangles": {
+    "lod0": 7728,
+    "lod1": 4776,
+    "lod2": 1392,
+    "col": 60
+   },
+   "draw_calls_lod0": 11,
+   "bin_mb": 0.269,
+   "textures_mb_if_alone": 7.41,
+   "textures": [
+    "textures/shared/asphalt_02_diff_35b711aa14.ktx2",
+    "textures/shared/asphalt_02_nor_gl_4722dada91.ktx2",
+    "textures/shared/asphalt_02_rough_21b18683eb.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/escudo_vasco_estilizado_1135bcfcf8.ktx2",
+    "textures/shared/gramado_campo_74d4a95a14.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/roof_tiles_14_diff_19e5392570.ktx2",
+    "textures/shared/roof_tiles_14_nor_gl_d90b1a1a54.ktx2",
+    "textures/shared/roof_tiles_14_rough_a2fdd22a01.ktx2",
+    "textures/shared/sao_januario_ao_d366b927ae.ktx2",
+    "textures/shared/wood_planks_grey_diff_8eaa5a41bf.ktx2",
+    "textures/shared/wood_planks_grey_nor_gl_fa310634a3.ktx2",
+    "textures/shared/wood_planks_grey_rough_6ff24ef076.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "centro_quarteirao",
+   "file": "assets/3d/centro_quarteirao.gltf",
+   "bin": "assets/3d/centro_quarteirao.bin",
+   "type": "quarteirao",
+   "scale": 1.0,
+   "lods": [
+    "centro_quarteirao_lod0",
+    "centro_quarteirao_lod1",
+    "centro_quarteirao_lod2"
+   ],
+   "collision": "centro_quarteirao_col",
+   "triangles": {
+    "lod0": 27052,
+    "lod1": 13512,
+    "lod2": 3568,
+    "col": 60
+   },
+   "draw_calls_lod0": 10,
+   "bin_mb": 0.894,
+   "textures_mb_if_alone": 7.78,
+   "textures": [
+    "textures/shared/asphalt_02_diff_35b711aa14.ktx2",
+    "textures/shared/asphalt_02_nor_gl_4722dada91.ktx2",
+    "textures/shared/asphalt_02_rough_21b18683eb.ktx2",
+    "textures/shared/calcada_centro_base_d62e874979.ktx2",
+    "textures/shared/calcada_centro_nrm_2e008b69af.ktx2",
+    "textures/shared/centro_quarteirao_ao_3ac9958c42.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/roof_tiles_14_diff_19e5392570.ktx2",
+    "textures/shared/roof_tiles_14_nor_gl_d90b1a1a54.ktx2",
+    "textures/shared/roof_tiles_14_rough_a2fdd22a01.ktx2",
+    "textures/shared/wood_planks_grey_diff_8eaa5a41bf.ktx2",
+    "textures/shared/wood_planks_grey_nor_gl_fa310634a3.ktx2",
+    "textures/shared/wood_planks_grey_rough_6ff24ef076.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "maracana",
+   "file": "assets/3d/maracana.gltf",
+   "bin": "assets/3d/maracana.bin",
+   "type": "landmark",
+   "scale": 1.0,
+   "lods": [
+    "maracana_lod0",
+    "maracana_lod1",
+    "maracana_lod2"
+   ],
+   "collision": "maracana_col",
+   "triangles": {
+    "lod0": 35924,
+    "lod1": 15076,
+    "lod2": 3820,
+    "col": 508
+   },
+   "draw_calls_lod0": 7,
+   "bin_mb": 0.991,
+   "textures_mb_if_alone": 1.48,
+   "textures": [
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/gramado_campo_74d4a95a14.ktx2",
+    "textures/shared/maracana_ao_d3f888b7cd.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "cristo_corcovado",
+   "file": "assets/3d/cristo_corcovado.gltf",
+   "bin": "assets/3d/cristo_corcovado.bin",
+   "type": "landmark",
+   "scale": 1.0,
+   "lods": [
+    "cristo_corcovado_lod0",
+    "cristo_corcovado_lod1",
+    "cristo_corcovado_lod2"
+   ],
+   "collision": "cristo_corcovado_col",
+   "triangles": {
+    "lod0": 15260,
+    "lod1": 6768,
+    "lod2": 2512,
+    "col": 592
+   },
+   "draw_calls_lod0": 7,
+   "bin_mb": 0.665,
+   "textures_mb_if_alone": 6.18,
+   "textures": [
+    "textures/shared/brown_mud_leaves_01_diff_a7a36cc77c.ktx2",
+    "textures/shared/brown_mud_leaves_01_nor_gl_a4135c02f0.ktx2",
+    "textures/shared/brown_mud_leaves_01_rough_929c999ce4.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/cristo_corcovado_ao_c0c8f86758.ktx2",
+    "textures/shared/pedra_sabao_5d81a210f4.ktx2",
+    "textures/shared/rock_face_03_diff_99c494dc4b.ktx2",
+    "textures/shared/rock_face_03_nor_gl_96d20fafe2.ktx2",
+    "textures/shared/rock_face_03_rough_187accc272.ktx2",
+    "textures/shared/wood_planks_grey_diff_8eaa5a41bf.ktx2",
+    "textures/shared/wood_planks_grey_nor_gl_fa310634a3.ktx2",
+    "textures/shared/wood_planks_grey_rough_6ff24ef076.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "calcadao_copacabana",
+   "file": "assets/3d/calcadao_copacabana.gltf",
+   "bin": "assets/3d/calcadao_copacabana.bin",
+   "type": "modulo_cenario",
+   "scale": 1.0,
+   "lods": [
+    "calcadao_copacabana_lod0",
+    "calcadao_copacabana_lod1",
+    "calcadao_copacabana_lod2"
+   ],
+   "collision": "calcadao_copacabana_col",
+   "triangles": {
+    "lod0": 176,
+    "lod1": 104,
+    "lod2": 50,
+    "col": 36
+   },
+   "draw_calls_lod0": 6,
+   "bin_mb": 0.01,
+   "textures_mb_if_alone": 5.24,
+   "textures": [
+    "textures/shared/asphalt_02_diff_35b711aa14.ktx2",
+    "textures/shared/asphalt_02_nor_gl_4722dada91.ktx2",
+    "textures/shared/asphalt_02_rough_21b18683eb.ktx2",
+    "textures/shared/calcadao_base_d09e6192a9.ktx2",
+    "textures/shared/calcadao_copacabana_ao_49b5150fe5.ktx2",
+    "textures/shared/calcadao_copacabana_ao_asphalt_02_rough_dd2504c46a.ktx2",
+    "textures/shared/calcadao_copacabana_ao_coast_sand_01_rough_2b8e6e89db.ktx2",
+    "textures/shared/calcadao_copacabana_ao_concrete_wall_008_rough_2f1374cc19.ktx2",
+    "textures/shared/calcadao_nrm_95f850fa4d.ktx2",
+    "textures/shared/coast_sand_01_diff_158f2b9903.ktx2",
+    "textures/shared/coast_sand_01_nor_gl_33b2ae7fa1.ktx2",
+    "textures/shared/coast_sand_01_rough_139e23efcd.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1
+  },
+  {
+   "key": "predio_terreo",
+   "file": "assets/3d/predio_terreo.gltf",
+   "bin": "assets/3d/predio_terreo.bin",
+   "type": "predio_modulo",
+   "scale": 1.0,
+   "lods": [
+    "predio_terreo_lod0",
+    "predio_terreo_lod1",
+    "predio_terreo_lod2"
+   ],
+   "collision": "predio_terreo_col",
+   "triangles": {
+    "lod0": 924,
+    "lod1": 456,
+    "lod2": 252,
+    "col": 12
+   },
+   "draw_calls_lod0": 6,
+   "bin_mb": 0.039,
+   "textures_mb_if_alone": 2.28,
+   "textures": [
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/predio_terreo_ao_1327ba4a20.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "stack_height_m": 4.5
+  },
+  {
+   "key": "predio_andar_a",
+   "file": "assets/3d/predio_andar_a.gltf",
+   "bin": "assets/3d/predio_andar_a.bin",
+   "type": "predio_modulo",
+   "scale": 1.0,
+   "lods": [
+    "predio_andar_a_lod0",
+    "predio_andar_a_lod1",
+    "predio_andar_a_lod2"
+   ],
+   "collision": "predio_andar_a_col",
+   "triangles": {
+    "lod0": 840,
+    "lod1": 816,
+    "lod2": 384,
+    "col": 12
+   },
+   "draw_calls_lod0": 7,
+   "bin_mb": 0.031,
+   "textures_mb_if_alone": 2.27,
+   "textures": [
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/predio_andar_a_ao_528975a886.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "stack_height_m": 3.0
+  },
+  {
+   "key": "predio_andar_b",
+   "file": "assets/3d/predio_andar_b.gltf",
+   "bin": "assets/3d/predio_andar_b.bin",
+   "type": "predio_modulo",
+   "scale": 1.0,
+   "lods": [
+    "predio_andar_b_lod0",
+    "predio_andar_b_lod1",
+    "predio_andar_b_lod2"
+   ],
+   "collision": "predio_andar_b_col",
+   "triangles": {
+    "lod0": 1032,
+    "lod1": 1008,
+    "lod2": 504,
+    "col": 12
+   },
+   "draw_calls_lod0": 6,
+   "bin_mb": 0.033,
+   "textures_mb_if_alone": 2.3,
+   "textures": [
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/pastilha_base_6eb8262622.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/predio_andar_b_ao_aa521911b8.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "stack_height_m": 3.0
+  },
+  {
+   "key": "predio_cobertura",
+   "file": "assets/3d/predio_cobertura.gltf",
+   "bin": "assets/3d/predio_cobertura.bin",
+   "type": "predio_modulo",
+   "scale": 1.0,
+   "lods": [
+    "predio_cobertura_lod0",
+    "predio_cobertura_lod1",
+    "predio_cobertura_lod2"
+   ],
+   "collision": "predio_cobertura_col",
+   "triangles": {
+    "lod0": 252,
+    "lod1": 228,
+    "lod2": 84,
+    "col": 24
+   },
+   "draw_calls_lod0": 6,
+   "bin_mb": 0.011,
+   "textures_mb_if_alone": 2.28,
+   "textures": [
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/predio_cobertura_ao_d031178df8.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "stack_height_m": 0
+  },
+  {
+   "key": "carro_popular",
+   "file": "assets/3d/carro_popular.gltf",
+   "bin": "assets/3d/carro_popular.bin",
+   "type": "veiculo",
+   "scale": 1.0,
+   "lods": [
+    "carro_popular_lod0",
+    "carro_popular_lod1",
+    "carro_popular_lod2"
+   ],
+   "collision": "carro_popular_col",
+   "triangles": {
+    "lod0": 1246,
+    "lod1": 820,
+    "lod2": 472,
+    "col": 12
+   },
+   "draw_calls_lod0": 10,
+   "bin_mb": 0.039,
+   "textures_mb_if_alone": 0.14,
+   "textures": [
+    "textures/shared/carro_popular_ao_ac2c38961e.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "wheels": [
+    "wheel_fl",
+    "wheel_fr",
+    "wheel_rl",
+    "wheel_rr"
+   ]
+  },
+  {
+   "key": "taxi_rio",
+   "file": "assets/3d/taxi_rio.gltf",
+   "bin": "assets/3d/taxi_rio.bin",
+   "type": "veiculo",
+   "scale": 1.0,
+   "lods": [
+    "taxi_rio_lod0",
+    "taxi_rio_lod1",
+    "taxi_rio_lod2"
+   ],
+   "collision": "taxi_rio_col",
+   "triangles": {
+    "lod0": 1288,
+    "lod1": 862,
+    "lod2": 514,
+    "col": 12
+   },
+   "draw_calls_lod0": 10,
+   "bin_mb": 0.044,
+   "textures_mb_if_alone": 0.14,
+   "textures": [
+    "textures/shared/taxi_rio_ao_52f3cce799.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "wheels": [
+    "wheel_fl",
+    "wheel_fr",
+    "wheel_rl",
+    "wheel_rr"
+   ]
+  },
+  {
+   "key": "onibus_municipal",
+   "file": "assets/3d/onibus_municipal.gltf",
+   "bin": "assets/3d/onibus_municipal.bin",
+   "type": "veiculo",
+   "scale": 1.0,
+   "lods": [
+    "onibus_municipal_lod0",
+    "onibus_municipal_lod1",
+    "onibus_municipal_lod2"
+   ],
+   "collision": "onibus_municipal_col",
+   "triangles": {
+    "lod0": 2104,
+    "lod1": 1408,
+    "lod2": 1060,
+    "col": 12
+   },
+   "draw_calls_lod0": 11,
+   "bin_mb": 0.056,
+   "textures_mb_if_alone": 0.09,
+   "textures": [
+    "textures/shared/onibus_municipal_ao_bc2e821865.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "wheels": [
+    "wheel_fl",
+    "wheel_fr",
+    "wheel_rl",
+    "wheel_rr"
+   ]
+  },
+  {
+   "key": "predio_modernista",
+   "file": "assets/3d/predio_modernista.gltf",
+   "bin": "assets/3d/predio_modernista.bin",
+   "type": "predio_inteiro",
+   "scale": 1.0,
+   "lods": [
+    "predio_modernista_lod0",
+    "predio_modernista_lod1",
+    "predio_modernista_lod2"
+   ],
+   "collision": "predio_modernista_col",
+   "triangles": {
+    "lod0": 1072,
+    "lod1": 896,
+    "lod2": 400,
+    "col": 12
+   },
+   "draw_calls_lod0": 4,
+   "bin_mb": 0.056,
+   "textures_mb_if_alone": 2.67,
+   "textures": [
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/pastilha_base_6eb8262622.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/predio_modernista_ao_c52578fd91.ktx2",
+    "textures/shared/predio_modernista_ao_concrete_wall_008_rough_5042ad65d4.ktx2",
+    "textures/shared/predio_modernista_ao_plastered_wall_02_rough_2e90b971c4.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "stack_height_m": 0
+  },
+  {
+   "key": "predio_artdeco",
+   "file": "assets/3d/predio_artdeco.gltf",
+   "bin": "assets/3d/predio_artdeco.bin",
+   "type": "predio_inteiro",
+   "scale": 1.0,
+   "lods": [
+    "predio_artdeco_lod0",
+    "predio_artdeco_lod1",
+    "predio_artdeco_lod2"
+   ],
+   "collision": "predio_artdeco_col",
+   "triangles": {
+    "lod0": 1212,
+    "lod1": 1164,
+    "lod2": 484,
+    "col": 12
+   },
+   "draw_calls_lod0": 4,
+   "bin_mb": 0.036,
+   "textures_mb_if_alone": 2.59,
+   "textures": [
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/predio_artdeco_ao_08105fd23e.ktx2",
+    "textures/shared/predio_artdeco_ao_concrete_wall_008_rough_8542a8b30e.ktx2",
+    "textures/shared/predio_artdeco_ao_plastered_wall_02_rough_d46ff35134.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "stack_height_m": 0
+  },
+  {
+   "key": "copacabana_quarteirao",
+   "file": "assets/3d/copacabana_quarteirao.gltf",
+   "bin": "assets/3d/copacabana_quarteirao.bin",
+   "type": "quarteirao",
+   "scale": 1.0,
+   "lods": [
+    "copacabana_quarteirao_lod0",
+    "copacabana_quarteirao_lod1",
+    "copacabana_quarteirao_lod2"
+   ],
+   "collision": "copacabana_quarteirao_col",
+   "triangles": {
+    "lod0": 23616,
+    "lod1": 8448,
+    "lod2": 2332,
+    "col": 60
+   },
+   "draw_calls_lod0": 14,
+   "bin_mb": 0.749,
+   "textures_mb_if_alone": 6.96,
+   "textures": [
+    "textures/shared/asphalt_02_diff_35b711aa14.ktx2",
+    "textures/shared/asphalt_02_nor_gl_4722dada91.ktx2",
+    "textures/shared/asphalt_02_rough_21b18683eb.ktx2",
+    "textures/shared/calcada_centro_base_d62e874979.ktx2",
+    "textures/shared/calcada_centro_nrm_2e008b69af.ktx2",
+    "textures/shared/calcadao_base_d09e6192a9.ktx2",
+    "textures/shared/calcadao_nrm_95f850fa4d.ktx2",
+    "textures/shared/concrete_wall_008_diff_6751f3bce0.ktx2",
+    "textures/shared/concrete_wall_008_nor_gl_1d36d37d38.ktx2",
+    "textures/shared/concrete_wall_008_rough_64788eab4b.ktx2",
+    "textures/shared/copa_fachada_e3b2cd5be1.ktx2",
+    "textures/shared/copacabana_quarteirao_ao_88fe44f94d.ktx2",
+    "textures/shared/pastilha_base_6eb8262622.ktx2",
+    "textures/shared/plastered_wall_02_diff_fff03bed87.ktx2",
+    "textures/shared/plastered_wall_02_nor_gl_0ebe6c6f4f.ktx2",
+    "textures/shared/plastered_wall_02_rough_7943d890fe.ktx2",
+    "textures/shared/wood_planks_grey_diff_8eaa5a41bf.ktx2",
+    "textures/shared/wood_planks_grey_nor_gl_fa310634a3.ktx2",
+    "textures/shared/wood_planks_grey_rough_6ff24ef076.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": 1,
+   "layout": "assets/3d/copacabana_quarteirao_layout.json",
+   "facade_atlas": "copa_fachada (impostor baked, lod1/lod2 e andares do lod0)"
+  },
+  {
+   "key": "protagonista",
+   "file": "assets/3d/protagonista.glb",
+   "type": "personagem",
+   "scale": 1.0,
+   "lods": [
+    "protagonista_lod0",
+    "protagonista_lod1",
+    "protagonista_lod2"
+   ],
+   "collision": "protagonista_col",
+   "skeleton": "protagonista_rig",
+   "animations": [
+    "idle",
+    "walk",
+    "run",
+    "drive"
+   ],
+   "triangles": {
+    "lod0": 6424,
+    "lod1": 3212,
+    "lod2": 1413,
+    "col": 16
+   },
+   "draw_calls_lod0": 1,
+   "mb": 1.8,
+   "base_cc0": "Quaternius Animated Woman (poly.pizza/m/qJ2gsTUBHL)",
+   "note": "nó raiz com escala (rig Quaternius em cm); altura final 1,68 m"
+  }
+ ]
+}
