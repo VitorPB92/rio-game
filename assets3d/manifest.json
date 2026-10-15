@@ -8,8 +8,8 @@
   "dir": "assets/3d/textures/shared",
   "format": "KTX2 (ETC1S cor/AO/ORM, UASTC normal)",
   "naming": "<nome>_<sha1 da fonte+slot>.ktx2: mesma textura-fonte usa o mesmo arquivo (deduplicada entre assets)",
-  "total_mb": 16.94,
-  "files": 59,
+  "total_mb": 17.24,
+  "files": 60,
   "loading": "Cada .gltf referencia textures/shared/... por URI relativa à pasta assets/3d; o .bin usa EXT_meshopt_compression. Registrar KTX2Loader + MeshoptDecoder no GLTFLoader e reutilizar um LoadingManager/Cache para não baixar a mesma URI duas vezes.",
   "sources": "Fontes PNG/JPG autocontidas em _build/<key>_src.glb (para editar/reprocessar)."
  },
@@ -604,7 +604,68 @@
     "wheel_fr",
     "wheel_rl",
     "wheel_rr"
-   ]
+   ],
+   "color_variants": {
+    "material": "pintura (e pintura_far nos LODs 1/2)",
+    "method": "KHR_materials_variants no .gltf + baseColorFactor padrão = 1ª cor; alternativa: clonar o material e setar material.color (vertex color da pintura é branco)",
+    "default": "vermelho",
+    "variants": [
+     {
+      "name": "vermelho",
+      "hex": "#9b1b1e",
+      "linear": [
+       0.3278,
+       0.011,
+       0.013
+      ]
+     },
+     {
+      "name": "prata",
+      "hex": "#b8bcc0",
+      "linear": [
+       0.4793,
+       0.5029,
+       0.5271
+      ]
+     },
+     {
+      "name": "branco",
+      "hex": "#eceeee",
+      "linear": [
+       0.8388,
+       0.855,
+       0.855
+      ]
+     },
+     {
+      "name": "preto",
+      "hex": "#16181b",
+      "linear": [
+       0.008,
+       0.0091,
+       0.011
+      ]
+     },
+     {
+      "name": "cinza_grafite",
+      "hex": "#4a4e54",
+      "linear": [
+       0.0685,
+       0.0762,
+       0.0887
+      ]
+     },
+     {
+      "name": "azul_marinho",
+      "hex": "#1d2c4f",
+      "linear": [
+       0.0123,
+       0.0252,
+       0.0782
+      ]
+     }
+    ]
+   }
   },
   {
    "key": "taxi_rio",
@@ -625,7 +686,7 @@
     "col": 12
    },
    "draw_calls_lod0": 10,
-   "bin_mb": 0.044,
+   "bin_mb": 0.043,
    "textures_mb_if_alone": 0.14,
    "textures": [
     "textures/shared/taxi_rio_ao_52f3cce799.ktx2"
@@ -640,7 +701,10 @@
     "wheel_fr",
     "wheel_rl",
     "wheel_rr"
-   ]
+   ],
+   "color_variants": {
+    "note": "táxi sempre amarelo com faixa azul (sem variantes)"
+   }
   },
   {
    "key": "onibus_municipal",
@@ -661,7 +725,7 @@
     "col": 12
    },
    "draw_calls_lod0": 11,
-   "bin_mb": 0.056,
+   "bin_mb": 0.055,
    "textures_mb_if_alone": 0.09,
    "textures": [
     "textures/shared/onibus_municipal_ao_bc2e821865.ktx2"
@@ -676,7 +740,68 @@
     "wheel_fr",
     "wheel_rl",
     "wheel_rr"
-   ]
+   ],
+   "color_variants": {
+    "material": "pintura (e pintura_far nos LODs 1/2)",
+    "method": "KHR_materials_variants no .gltf + baseColorFactor padrão = 1ª cor; alternativa: clonar o material e setar material.color (vertex color da pintura é branco)",
+    "default": "branco",
+    "variants": [
+     {
+      "name": "branco",
+      "hex": "#eeeeea",
+      "linear": [
+       0.855,
+       0.855,
+       0.8228
+      ]
+     },
+     {
+      "name": "amarelo",
+      "hex": "#e8b21a",
+      "linear": [
+       0.807,
+       0.4452,
+       0.0103
+      ]
+     },
+     {
+      "name": "azul",
+      "hex": "#1f4e9c",
+      "linear": [
+       0.0137,
+       0.0762,
+       0.3325
+      ]
+     },
+     {
+      "name": "verde",
+      "hex": "#2e7d4f",
+      "linear": [
+       0.0273,
+       0.2051,
+       0.0782
+      ]
+     },
+     {
+      "name": "prata",
+      "hex": "#b4b8bc",
+      "linear": [
+       0.4564,
+       0.4793,
+       0.5029
+      ]
+     },
+     {
+      "name": "vermelho",
+      "hex": "#a32025",
+      "linear": [
+       0.3663,
+       0.0144,
+       0.0185
+      ]
+     }
+    ]
+   }
   },
   {
    "key": "predio_modernista",
@@ -806,6 +931,735 @@
    "ao_texcoord": 1,
    "layout": "assets/3d/copacabana_quarteirao_layout.json",
    "facade_atlas": "copa_fachada (impostor baked, lod1/lod2 e andares do lod0)"
+  },
+  {
+   "key": "prop_amendoeira",
+   "file": "assets/3d/prop_amendoeira.gltf",
+   "bin": "assets/3d/prop_amendoeira.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_amendoeira_lod0",
+    "prop_amendoeira_lod1",
+    "prop_amendoeira_lod2"
+   ],
+   "collision": "prop_amendoeira_col",
+   "triangles": {
+    "lod0": 260,
+    "lod1": 162,
+    "lod2": 44,
+    "col": 12
+   },
+   "draw_calls_lod0": 2,
+   "bin_mb": 0.013,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 2
+  },
+  {
+   "key": "prop_banca_jornal",
+   "file": "assets/3d/prop_banca_jornal.gltf",
+   "bin": "assets/3d/prop_banca_jornal.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_banca_jornal_lod0",
+    "prop_banca_jornal_lod1",
+    "prop_banca_jornal_lod2"
+   ],
+   "collision": "prop_banca_jornal_col",
+   "triangles": {
+    "lod0": 108,
+    "lod1": 84,
+    "lod2": 48,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.005,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_bicicletario",
+   "file": "assets/3d/prop_bicicletario.gltf",
+   "bin": "assets/3d/prop_bicicletario.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_bicicletario_lod0",
+    "prop_bicicletario_lod1",
+    "prop_bicicletario_lod2"
+   ],
+   "collision": "prop_bicicletario_col",
+   "triangles": {
+    "lod0": 372,
+    "lod1": 252,
+    "lod2": 72,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.015,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_calcada_ondas",
+   "file": "assets/3d/prop_calcada_ondas.gltf",
+   "bin": "assets/3d/prop_calcada_ondas.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_calcada_ondas_lod0",
+    "prop_calcada_ondas_lod1",
+    "prop_calcada_ondas_lod2"
+   ],
+   "collision": "prop_calcada_ondas_col",
+   "triangles": {
+    "lod0": 12,
+    "lod1": 12,
+    "lod2": 12,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.0,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_calcada",
+   "file": "assets/3d/prop_calcada.gltf",
+   "bin": "assets/3d/prop_calcada.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_calcada_lod0",
+    "prop_calcada_lod1",
+    "prop_calcada_lod2"
+   ],
+   "collision": "prop_calcada_col",
+   "triangles": {
+    "lod0": 12,
+    "lod1": 12,
+    "lod2": 12,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.0,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_lixeira_comlurb",
+   "file": "assets/3d/prop_lixeira_comlurb.gltf",
+   "bin": "assets/3d/prop_lixeira_comlurb.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_lixeira_comlurb_lod0",
+    "prop_lixeira_comlurb_lod1",
+    "prop_lixeira_comlurb_lod2"
+   ],
+   "collision": "prop_lixeira_comlurb_col",
+   "triangles": {
+    "lod0": 140,
+    "lod1": 108,
+    "lod2": 52,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.007,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_meio_fio",
+   "file": "assets/3d/prop_meio_fio.gltf",
+   "bin": "assets/3d/prop_meio_fio.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_meio_fio_lod0",
+    "prop_meio_fio_lod1",
+    "prop_meio_fio_lod2"
+   ],
+   "collision": "prop_meio_fio_col",
+   "triangles": {
+    "lod0": 16,
+    "lod1": 16,
+    "lod2": 16,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.001,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_orelhao_azul",
+   "file": "assets/3d/prop_orelhao_azul.gltf",
+   "bin": "assets/3d/prop_orelhao_azul.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_orelhao_azul_lod0",
+    "prop_orelhao_azul_lod1",
+    "prop_orelhao_azul_lod2"
+   ],
+   "collision": "prop_orelhao_azul_col",
+   "triangles": {
+    "lod0": 236,
+    "lod1": 132,
+    "lod2": 54,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.011,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_orelhao_laranja",
+   "file": "assets/3d/prop_orelhao_laranja.gltf",
+   "bin": "assets/3d/prop_orelhao_laranja.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_orelhao_laranja_lod0",
+    "prop_orelhao_laranja_lod1",
+    "prop_orelhao_laranja_lod2"
+   ],
+   "collision": "prop_orelhao_laranja_col",
+   "triangles": {
+    "lod0": 236,
+    "lod1": 132,
+    "lod2": 54,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.011,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_palmeira",
+   "file": "assets/3d/prop_palmeira.gltf",
+   "bin": "assets/3d/prop_palmeira.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_palmeira_lod0",
+    "prop_palmeira_lod1",
+    "prop_palmeira_lod2"
+   ],
+   "collision": "prop_palmeira_col",
+   "triangles": {
+    "lod0": 186,
+    "lod1": 152,
+    "lod2": 52,
+    "col": 12
+   },
+   "draw_calls_lod0": 2,
+   "bin_mb": 0.01,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 2
+  },
+  {
+   "key": "prop_placa_pare",
+   "file": "assets/3d/prop_placa_pare.gltf",
+   "bin": "assets/3d/prop_placa_pare.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_placa_pare_lod0",
+    "prop_placa_pare_lod1",
+    "prop_placa_pare_lod2"
+   ],
+   "collision": "prop_placa_pare_col",
+   "triangles": {
+    "lod0": 48,
+    "lod1": 40,
+    "lod2": 40,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.002,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_placa_proibido_estacionar",
+   "file": "assets/3d/prop_placa_proibido_estacionar.gltf",
+   "bin": "assets/3d/prop_placa_proibido_estacionar.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_placa_proibido_estacionar_lod0",
+    "prop_placa_proibido_estacionar_lod1",
+    "prop_placa_proibido_estacionar_lod2"
+   ],
+   "collision": "prop_placa_proibido_estacionar_col",
+   "triangles": {
+    "lod0": 80,
+    "lod1": 72,
+    "lod2": 40,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.004,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_placa_rua",
+   "file": "assets/3d/prop_placa_rua.gltf",
+   "bin": "assets/3d/prop_placa_rua.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_placa_rua_lod0",
+    "prop_placa_rua_lod1",
+    "prop_placa_rua_lod2"
+   ],
+   "collision": "prop_placa_rua_col",
+   "triangles": {
+    "lod0": 44,
+    "lod1": 36,
+    "lod2": 36,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.002,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_ponto_onibus",
+   "file": "assets/3d/prop_ponto_onibus.gltf",
+   "bin": "assets/3d/prop_ponto_onibus.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_ponto_onibus_lod0",
+    "prop_ponto_onibus_lod1",
+    "prop_ponto_onibus_lod2"
+   ],
+   "collision": "prop_ponto_onibus_col",
+   "triangles": {
+    "lod0": 132,
+    "lod1": 132,
+    "lod2": 60,
+    "col": 36
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.005,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_poste",
+   "file": "assets/3d/prop_poste.gltf",
+   "bin": "assets/3d/prop_poste.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_poste_lod0",
+    "prop_poste_lod1",
+    "prop_poste_lod2"
+   ],
+   "collision": "prop_poste_col",
+   "triangles": {
+    "lod0": 116,
+    "lod1": 88,
+    "lod2": 60,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.006,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_quiosque",
+   "file": "assets/3d/prop_quiosque.gltf",
+   "bin": "assets/3d/prop_quiosque.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_quiosque_lod0",
+    "prop_quiosque_lod1",
+    "prop_quiosque_lod2"
+   ],
+   "collision": "prop_quiosque_col",
+   "triangles": {
+    "lod0": 374,
+    "lod1": 332,
+    "lod2": 144,
+    "col": 24
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.018,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "prop_semaforo",
+   "file": "assets/3d/prop_semaforo.gltf",
+   "bin": "assets/3d/prop_semaforo.bin",
+   "type": "prop",
+   "scale": 1.0,
+   "lods": [
+    "prop_semaforo_lod0",
+    "prop_semaforo_lod1",
+    "prop_semaforo_lod2"
+   ],
+   "collision": "prop_semaforo_col",
+   "triangles": {
+    "lod0": 184,
+    "lod1": 152,
+    "lod2": 84,
+    "col": 12
+   },
+   "draw_calls_lod0": 1,
+   "bin_mb": 0.009,
+   "textures_mb_if_alone": 0.31,
+   "textures": [
+    "textures/shared/props_atlas_940b36e972.ktx2"
+   ],
+   "requires": [
+    "KTX2Loader",
+    "MeshoptDecoder"
+   ],
+   "ao_texcoord": null,
+   "instancing": "InstancedMesh por LOD (geometria do nó lodN + material compartilhado); todos os props usam o mesmo atlas",
+   "atlas": "props_atlas (2048x1024, cells em textures/props_atlas_cells.json)",
+   "materials": 1
+  },
+  {
+   "key": "npc_executivo",
+   "file": "assets/3d/npc_executivo.glb",
+   "type": "npc",
+   "scale": 1.0,
+   "lods": [
+    "npc_executivo_lod0",
+    "npc_executivo_lod1",
+    "npc_executivo_lod2"
+   ],
+   "collision": "npc_executivo_col",
+   "skeleton": "npc_executivo_rig",
+   "animations": [
+    "idle",
+    "walk"
+   ],
+   "triangles": {
+    "lod0": 3000,
+    "lod1": 1600,
+    "lod2": 600,
+    "col": 16
+   },
+   "draw_calls_lod0": 1,
+   "mb": 1.05,
+   "altura_m": 1.8,
+   "base_cc0": "Quaternius via Poly Pizza (poly.pizza/m/JFrLIKqvCH), CC0",
+   "note": "1 material por vertex color; clipes idle/walk como actions (AnimationMixer)"
+  },
+  {
+   "key": "npc_gari_comlurb",
+   "file": "assets/3d/npc_gari_comlurb.glb",
+   "type": "npc",
+   "scale": 1.0,
+   "lods": [
+    "npc_gari_comlurb_lod0",
+    "npc_gari_comlurb_lod1",
+    "npc_gari_comlurb_lod2"
+   ],
+   "collision": "npc_gari_comlurb_col",
+   "skeleton": "npc_gari_comlurb_rig",
+   "animations": [
+    "idle",
+    "walk"
+   ],
+   "triangles": {
+    "lod0": 3000,
+    "lod1": 1600,
+    "lod2": 600,
+    "col": 16
+   },
+   "draw_calls_lod0": 1,
+   "mb": 0.89,
+   "altura_m": 1.74,
+   "base_cc0": "Quaternius via Poly Pizza (poly.pizza/m/Yg2bQZO6Hj), CC0",
+   "note": "1 material por vertex color; clipes idle/walk como actions (AnimationMixer)"
+  },
+  {
+   "key": "npc_jovem_botafogo",
+   "file": "assets/3d/npc_jovem_botafogo.glb",
+   "type": "npc",
+   "scale": 1.0,
+   "lods": [
+    "npc_jovem_botafogo_lod0",
+    "npc_jovem_botafogo_lod1",
+    "npc_jovem_botafogo_lod2"
+   ],
+   "collision": "npc_jovem_botafogo_col",
+   "skeleton": "npc_jovem_botafogo_rig",
+   "animations": [
+    "idle",
+    "walk"
+   ],
+   "triangles": {
+    "lod0": 3000,
+    "lod1": 1600,
+    "lod2": 600,
+    "col": 16
+   },
+   "draw_calls_lod0": 1,
+   "mb": 1.04,
+   "altura_m": 1.62,
+   "base_cc0": "Quaternius via Poly Pizza (poly.pizza/m/kZ3DmIoGip), CC0",
+   "note": "1 material por vertex color; clipes idle/walk como actions (AnimationMixer)"
+  },
+  {
+   "key": "npc_senhora",
+   "file": "assets/3d/npc_senhora.glb",
+   "type": "npc",
+   "scale": 1.0,
+   "lods": [
+    "npc_senhora_lod0",
+    "npc_senhora_lod1",
+    "npc_senhora_lod2"
+   ],
+   "collision": "npc_senhora_col",
+   "skeleton": "npc_senhora_rig",
+   "animations": [
+    "idle",
+    "walk"
+   ],
+   "triangles": {
+    "lod0": 1786,
+    "lod1": 1600,
+    "lod2": 600,
+    "col": 16
+   },
+   "draw_calls_lod0": 1,
+   "mb": 0.59,
+   "altura_m": 1.56,
+   "base_cc0": "Quaternius via Poly Pizza (poly.pizza/m/zMyPlQXBzq), CC0",
+   "note": "1 material por vertex color; clipes idle/walk como actions (AnimationMixer)"
+  },
+  {
+   "key": "npc_torcedor_flamengo",
+   "file": "assets/3d/npc_torcedor_flamengo.glb",
+   "type": "npc",
+   "scale": 1.0,
+   "lods": [
+    "npc_torcedor_flamengo_lod0",
+    "npc_torcedor_flamengo_lod1",
+    "npc_torcedor_flamengo_lod2"
+   ],
+   "collision": "npc_torcedor_flamengo_col",
+   "skeleton": "npc_torcedor_flamengo_rig",
+   "animations": [
+    "idle",
+    "walk"
+   ],
+   "triangles": {
+    "lod0": 2115,
+    "lod1": 1600,
+    "lod2": 600,
+    "col": 16
+   },
+   "draw_calls_lod0": 1,
+   "mb": 0.63,
+   "altura_m": 1.76,
+   "base_cc0": "Quaternius via Poly Pizza (poly.pizza/m/HMnuH5geEG), CC0",
+   "note": "1 material por vertex color; clipes idle/walk como actions (AnimationMixer)"
+  },
+  {
+   "key": "npc_torcedora_fluminense",
+   "file": "assets/3d/npc_torcedora_fluminense.glb",
+   "type": "npc",
+   "scale": 1.0,
+   "lods": [
+    "npc_torcedora_fluminense_lod0",
+    "npc_torcedora_fluminense_lod1",
+    "npc_torcedora_fluminense_lod2"
+   ],
+   "collision": "npc_torcedora_fluminense_col",
+   "skeleton": "npc_torcedora_fluminense_rig",
+   "animations": [
+    "idle",
+    "walk"
+   ],
+   "triangles": {
+    "lod0": 2227,
+    "lod1": 1600,
+    "lod2": 600,
+    "col": 16
+   },
+   "draw_calls_lod0": 1,
+   "mb": 0.72,
+   "altura_m": 1.66,
+   "base_cc0": "Quaternius via Poly Pizza (poly.pizza/m/XqzeZGB7iU), CC0",
+   "note": "1 material por vertex color; clipes idle/walk como actions (AnimationMixer)"
   },
   {
    "key": "protagonista",

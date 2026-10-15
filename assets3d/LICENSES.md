@@ -31,3 +31,22 @@ O ambientCG não foi usado.
 - Nomes reais (Vasco da Gama, Flamengo, Maracanã, São Januário) e cores/padrões de camisa (faixa diagonal, listras horizontais rubro-negras) foram aprovados pelo Vitor. Uniformes e "trade dress" também podem ser protegidos, e usar nomes de clubes em produto comercial costuma exigir licença. **Pedir parecer jurídico antes da publicação.**
 - Cristo Redentor: a imagem da estátua tem direitos administrados pela Arquidiocese do Rio, que já cobrou por usos comerciais. Também precisa de **checagem jurídica**.
 - Maracanã: o nome e a arquitetura são de uso público, mas a concessionária pode reivindicar marca sobre "Maracanã" em produtos.
+
+## Personagens NPC (15/10)
+Todos de **Quaternius** (https://quaternius.com), baixados do **Poly Pizza**. A licença indicada na página de cada modelo é **CC0 1.0** (domínio público). Os .glb originais estão em `_build/cc0/npc/`. Recoloridos por vertex color, com camisas de clube estilizadas por listras e sem escudos.
+
+| Chave | Modelo-base | URL | Licença |
+|---|---|---|---|
+| npc_torcedor_flamengo | Man (Quaternius) | https://poly.pizza/m/HMnuH5geEG | CC0 |
+| npc_torcedora_fluminense | Woman in Tank Top (Quaternius) | https://poly.pizza/m/XqzeZGB7iU | CC0 |
+| npc_jovem_botafogo | Casual Character (Quaternius) | https://poly.pizza/m/kZ3DmIoGip | CC0 |
+| npc_senhora | Woman in Dress (Quaternius) | https://poly.pizza/m/zMyPlQXBzq | CC0 |
+| npc_executivo | Business Man (Quaternius) | https://poly.pizza/m/JFrLIKqvCH | CC0 |
+| npc_gari_comlurb | Worker (Quaternius) | https://poly.pizza/m/Yg2bQZO6Hj | CC0 |
+
+- **Baixados e não usados:** Animated Woman 9kF7eTDbhO e nIItLV9nxS, Animated Human c3Ibh9I3udk, Woman Casual jpKRgGDxhk e Farmer 7pn3R6hPvE (todos CC0, Quaternius); Old Guy imEy3Tqg80 e Business Dude odKDM2t8Cr (CC0, Polygonal Mind; sem rig) e Grandpa mED3MPaQ6i (CC0, scaranto; sem rig).
+- **Evitados:** os modelos marcados CC-BY 3.0 (Worker E8079Ahx7k, Buff man, Generic Male).
+- **Kenney:** não foi usado nesta rodada.
+
+## Props de rua (15/10)
+Geometria e atlas `textures/props_atlas.png` feitos do zero (procedurais, em `tools/props/make_atlas.py`, com a fonte DejaVu, de licença livre, nos textos). Não há material de terceiros. A placa de rua usa um nome real de logradouro (Rua Barata Ribeiro) e o padrão visual azul da prefeitura, sem brasão. Os nomes "Comlurb" e "Copacabana" aparecem só como referência de estilo: **revisão jurídica recomendada** se o nome Comlurb for exibido no jogo.
